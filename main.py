@@ -1,3 +1,5 @@
+#!/bin/python3
+
 from pynput import keyboard
 from datetime import datetime
 import os
